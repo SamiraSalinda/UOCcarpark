@@ -8,4 +8,65 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
-</module>
+</module>case 3:
+                             Long_vehicle++;
+                             if (Handicapped < 10) {
+                                 pa.setLong_vehicle(Long_vehicle);
+                                 System.out.println(Long_vehicle + " Vehicle is added to Long vehicle slot");
+                             } else {
+                                 System.out.println(" Vehicles FULL Long_vehicle slot  ");
+                             }
+
+                             break;
+                         case 4:
+                             System.out.println("Vehicle in  Standard slot: " + pa.getStandard());
+                             System.out.println("Vehicle to  Handicapped slot: " + pa.getHandicapped());
+                             System.out.println("Vehicle to Long vehicle slot: " + pa.getLong_vehicle());
+                             break;
+                         case 5:
+                             pa.delete();
+                             System.out.println("All record is deleted");
+                             break;
+                         case 6:
+                             System.exit(0);
+                             break;
+
+                     }
+
+                 }
+             }
+
+             public static class Parking {
+                 private int Standard = 0, Handicapped = 0, Long_vehicle = 0;
+
+                 public int getStandard() {
+                     return Standard;
+                 }
+
+                 public void setStandard(int Standard) {
+                     this.Standard = Standard;
+                 }
+
+                 public int getHandicapped() {
+                     return Handicapped;
+                 }
+
+                 public void setHandicapped(int Handicapped) {
+                     this.Handicapped = Handicapped;
+                 }
+
+                 public int getLong_vehicle() {
+                     return Long_vehicle;
+                 }
+
+                 public void setLong_vehicle(int Long_vehicle) {
+                     this.Long_vehicle = Long_vehicle;
+                 }
+
+                 public void delete() {
+                     Standard = 0;
+                     Handicapped = 0;
+                     Long_vehicle = 0;
+                 }
+             }
+         }
